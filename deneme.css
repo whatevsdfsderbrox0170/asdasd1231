@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(to bottom,rgb(9, 4, 94) 10%,rgb(54, 82, 208),rgb(128, 204, 227) 60%);
+    height: 98vh;
+}
+#logo {
+    top: 3vh;
+    left: 0;
+    position: absolute;
+}
+header {
+    top: 1cm;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    font-size: 30pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    position: relative; 
+}
+#aciklama {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16pt;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    margin-top: 4vh;
+}
+#slide {
+    width: 202vh;
+    height: 100px;
+    bottom: 0px;
+    position: absolute;
+}
+#slideFoto {
+    width: 202vh;
+    height: 100px;
+}
+#icerik {
+    width: 100vh;
+    height: 400px;
+    margin-left: 51vh;
+    margin-right: 51vh;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+    font-size: 35pt;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+}
+p {
+    font-size: 22pt;
+    bottom: 13vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+}
+a {
+    color: white;
+    font-style: italic;
+}
+span {
+    top: 13vh;
+    position: absolute;
+}
+#foto {
+    display: flex;
+    position: absolute;
+    width: 100vh;
+    height: 400px;
+    margin-left: 51vh;
+    display: none;
+}
+#slide:hover {
+    bottom: 350px;
+    transition: bottom 0.6s ease-out;
+}
+#slide:hover #slideFoto {
+    height: 0;
+}
+#slide:hover #icerik {
+    display: flex;
+    background-color: rgba(54, 82, 208,0.8);
+}
+#slide:hover #foto {
+    display: flex;
+}
+#slide {
+    transition: bottom 0.1s ease-out;
+}
